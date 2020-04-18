@@ -10,9 +10,9 @@ $config = [
     ],
     'components' => [
         'db' => [
-            'dsn' => 'mysql:host=localhost;dbname=s24_c1',
+            'dsn' => 'mysql:host=localhost;dbname=bot',
             'username' => 'root',
-            'password' => '47228960panix',
+            'password' => '',
             'tablePrefix' => 'cms_',
 
         ],
@@ -21,7 +21,7 @@ $config = [
         ],
         'view' => [
             'theme' => [
-                'name' => 'autima'
+                'name' => 'basic'
             ],
         ],
     ],
