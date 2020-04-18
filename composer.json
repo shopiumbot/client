@@ -1,0 +1,24 @@
+{
+    "name": "shopiumbot/client",
+    "description": "shopiumbot",
+    "keywords": ["shopiumbot"],
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/shopiumbot/client/issues?state=open",
+        "source": "https://github.com/shopiumbot/client"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
