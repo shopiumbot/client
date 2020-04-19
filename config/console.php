@@ -16,10 +16,10 @@ $config = [
     ],
     'components' => [
         'db' => [
-            'dsn' => 'mysql:host=corner.mysql.tools;dbname=corner_bot',
-            'username' => 'corner_bot',
-            'password' => 'g09K*a+Jm1',
-            'tablePrefix' => 'cms_',
+            'dsn' => 'mysql:host=localhost;dbname=',
+            'username' => 'root',
+            'password' => '',
+            'tablePrefix' => 'prefix_',
         ],
     ],
     'params' => yii\helpers\ArrayHelper::merge([
