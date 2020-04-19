@@ -7,12 +7,18 @@ $config = [
     'runtimePath' => '@app/runtime',
     'aliases' => [
         '@core' => COMMON_PATH,
+		'@uploads' => dirname(__DIR__).'/web/uploads',
+    ],
+	'controllerMap' => [
+        'migrate' => ['class' => 'panix\engine\console\controllers\MigrateController',
+            'migrationPath' => ['@core/migrations', '@yii/rbac/migrations'],
+        ]
     ],
     'components' => [
         'db' => [
-            'dsn' => 'mysql:host=localhost;dbname=bot',
-            'username' => 'root',
-            'password' => '',
+            'dsn' => 'mysql:host=corner.mysql.tools;dbname=corner_bot',
+            'username' => 'corner_bot',
+            'password' => 'g09K*a+Jm1',
             'tablePrefix' => 'cms_',
         ],
     ],

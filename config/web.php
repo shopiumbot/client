@@ -7,6 +7,7 @@ $config = [
     'runtimePath' => '@app/runtime',
     'aliases' => [
         '@core' => COMMON_PATH,
+		'@uploads' => dirname(__DIR__).'/web/uploads',
     ],
     'components' => [
         'db' => [
@@ -14,7 +15,6 @@ $config = [
             'username' => 'corner_bot',
             'password' => 'g09K*a+Jm1',
             'tablePrefix' => 'cms_',
-
         ],
         'request' => [
             'cookieValidationKey' => 'fpsiKaSs1Mcb6zwlsUZwuhqScBs5UgPQ',
