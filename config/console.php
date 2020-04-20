@@ -16,9 +16,9 @@ $config = [
     ],
     'components' => [
         'db' => [
-            'dsn' => 'mysql:host=localhost;dbname=',
-            'username' => 'root',
-            'password' => '',
+            'dsn' => 'mysql:host=corner.mysql.tools;dbname=corner_bot2',
+            'username' => 'corner_bot2',
+            'password' => 'k4-6H3ds_K',
             'tablePrefix' => 'prefix_',
         ],
     ],

@@ -18,8 +18,12 @@ defined('YII_DEBUG') or define('YII_DEBUG', $debug);
 defined('YII_ENV') or define('YII_ENV', $env);
 
 require COMMON_PATH . '/vendor/autoload.php';
-require COMMON_PATH . '/vendor/yiisoft/yii2/Yii.php';
 
+
+require COMMON_PATH . '/vendor/yiisoft/yii2/Yii.php';
+Yii::$classMap['panix\engine\controllers\AdminController'] = COMMON_PATH.'/components/controllers/AdminController.php';
+Yii::$classMap['panix\engine\controllers\CommonController'] = COMMON_PATH.'/components/controllers/CommonController.php';
+Yii::$classMap['panix\mod\admin\widgets\sidebar\BackendNav'] = COMMON_PATH.'/vendor/shopium/mod-admin/widgets/sidebar/BackendNav.php';
 
 $config = yii\helpers\ArrayHelper::merge(
     require COMMON_PATH . '/config/common.php',
@@ -27,6 +31,7 @@ $config = yii\helpers\ArrayHelper::merge(
     require __DIR__ . '/../config/web.php'
 );
 
+$app = new \core\components\WebApplication($config);
 
-$app = new \panix\engine\WebApplication($config);
+
 $app->run();
