@@ -10,11 +10,11 @@ RewriteRule ^.*$ admin/index.php
 
 
 
-RewriteCond %{REQUEST_URI} ^/(assets|css|js|images)
+RewriteCond %{REQUEST_URI} ^/(assets|css|js|uploads)
 #RewriteRule ^assets/(.*)$ web/assets/$1 [L]
 #RewriteRule ^css/(.*)$ web/css/$1 [L]
 #RewriteRule ^js/(.*)$ web/js/$1 [L]
-#RewriteRule ^images/(.*)$ web/images/$1 [L]
+#RewriteRule ^uploads/(.*)$ web/uploads/$1 [L]
 RewriteRule ^(.*)$ web/$1 [L]
 RewriteCond %{REQUEST_URI} !^/(web|admin)/(assets|css|js)/
 RewriteCond %{REQUEST_URI} !index.php

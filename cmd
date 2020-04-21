@@ -21,6 +21,11 @@ require(COMMON_PATH . '/vendor/autoload.php');
 require(COMMON_PATH . '/vendor/yiisoft/yii2/Yii.php');
 
 
+
+Yii::$classMap['panix\engine\controllers\AdminController'] = COMMON_PATH.'/components/controllers/AdminController.php';
+Yii::$classMap['panix\engine\controllers\CommonController'] = COMMON_PATH.'/components/controllers/CommonController.php';
+
+
 $config = yii\helpers\ArrayHelper::merge(
     require COMMON_PATH . '/config/common.php',
    // require COMMON_PATH . '/config/web.php',

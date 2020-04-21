@@ -16,6 +16,7 @@ $config = [
             'username' => 'corner_bot2',
             'password' => 'k4-6H3ds_K',
             'tablePrefix' => 'prefix_',
+			'charset' =>'utf8mb4'
         ],
         'request' => [
             'cookieValidationKey' => 'fpsiKaSs1Mcb6zwlsUZwuhqScBs5UgPQ',

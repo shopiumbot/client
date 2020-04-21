@@ -8,6 +8,7 @@ $config = [
     'aliases' => [
         '@core' => COMMON_PATH,
 		'@uploads' => dirname(__DIR__).'/web/uploads',
+		'@runtime' => dirname(__DIR__).'/runtime',
     ],
 	'controllerMap' => [
         'migrate' => ['class' => 'panix\engine\console\controllers\MigrateController',
