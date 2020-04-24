@@ -12,21 +12,16 @@ $config = [
     ],
     'components' => [
         'db' => [
-            'dsn' => 'mysql:host=localhost;dbname=',
-            'username' => '',
-            'password' => '',
+            'dsn' => 'mysql:host=corner.mysql.tools;dbname=corner_bot',
+            'username' => 'corner_bot',
+            'password' => 'g09K*a+Jm1',
             'tablePrefix' => 'prefix_',
-			'charset' =>'utf8'
+			//'charset' =>'utf8mb4'
         ],
         'request' => [
             'cookieValidationKey' => 'fpsiKaSs1Mcb6zwlsUZwuhqScBs5UgPQ',
         ],
-        'view' => [
-            'theme' => [
-				'basePath'=>'@core/web/themes',
-                'name' => 'basic'
-            ],
-        ],
+
     ],
     'params' => yii\helpers\ArrayHelper::merge([
         'plan_id' => 2,
