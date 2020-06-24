@@ -11,20 +11,15 @@ $config = [
 		'@runtime' => dirname(__DIR__).'/runtime',
     ],
     'components' => [
-        'db' => [
-            'dsn' => 'mysql:host=corner.mysql.tools;dbname=corner_bot',
-            'username' => 'corner_bot',
-            'password' => 'g09K*a+Jm1',
-            'tablePrefix' => 'prefix_',
-			//'charset' =>'utf8mb4'
-        ],
+        'db' => require_once('_db.php'),
         'request' => [
-            'cookieValidationKey' => 'fpsiKaSs1Mcb6zwlsUZwuhqScBs5UgPQ',
+            'cookieValidationKey' => 'm38y535nygo8wytowertg78gm4wt',
         ],
 
     ],
     'params' => yii\helpers\ArrayHelper::merge([
         'plan_id' => 2,
+		'client_id' => 2,
     ],require(COMMON_PATH . '/config/params.php')),
 ];
 

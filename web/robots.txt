@@ -1,2 +1,2 @@
-User-Agent: *
-Disallow: /themes/
+User-agent: *
+Allow: /

@@ -8,7 +8,7 @@ RewriteEngine On
 
 
 
-RewriteCond %{REQUEST_URI} ^/(assets|css|js|uploads)
+RewriteCond %{REQUEST_URI} ^/(assets|css|js|uploads|telegram)
 RewriteRule ^(.*)$ web/$1 [L]
 RewriteCond %{REQUEST_URI} !^/(web)/(assets|css|js)/
 RewriteCond %{REQUEST_URI} !index.php
