@@ -16,7 +16,7 @@ echo phpversion();
 // fcgi doesn't have STDIN and STDOUT defined by default
 defined('STDIN') or define('STDIN', fopen('php://stdin', 'r'));
 defined('STDOUT') or define('STDOUT', fopen('php://stdout', 'w'));
-defined('COMMON_PATH') or define('COMMON_PATH', __DIR__ . '/../common-dev');
+defined('COMMON_PATH') or define('COMMON_PATH', __DIR__ . '/../common');
 
 require(COMMON_PATH . '/vendor/autoload.php');
 require(COMMON_PATH . '/vendor/yiisoft/yii2/Yii.php');
